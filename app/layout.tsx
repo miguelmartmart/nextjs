@@ -1,23 +1,18 @@
-import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
-import "./globals.css"
-import Navbar from "@/components/Navbar"
-import Footer from "@/components/Footer"
+import './globals.css'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
-const geistSans = Geist({ subsets: ["latin"], variable: "--font-geist-sans" })
-const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" })
-
-export const metadata: Metadata = {
-  title: "Software para Empresas",
-  description: "Portal informativo sobre IA, ERP y soluciones tecnológicas",
+export const metadata = {
+  title: 'Software para Empresas',
+  description: 'IA, ERP, automatización y soluciones digitales para negocios',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className="bg-white text-gray-900 antialiased font-sans">
         <Navbar />
-        <main className="p-8 max-w-6xl mx-auto">{children}</main>
+        <main className="px-6 py-8 max-w-6xl mx-auto">{children}</main>
         <Footer />
       </body>
     </html>
