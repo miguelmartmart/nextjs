@@ -53,7 +53,7 @@ export default function Home() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className={paragraphClasses}
         >
-          Portal informativo sobre tecnologías empresariales: IA, ERP,
+          Portal informativo sobre tecnologías empresariales: IA, ERP-CRM,
           automatización y soluciones digitales para negocios.
         </motion.p>
 
