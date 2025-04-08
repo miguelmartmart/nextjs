@@ -1,0 +1,56 @@
+
+@import "tailwindcss";
+
+/* ======================== */
+/*        ROOT VARS        */
+/* ======================== */
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* ======================== */
+/*         BODY TAG         */
+/* ======================== */
+/* ⚠️ No usar @apply con bg-white, etc., debido a limitaciones de PostCSS en Tailwind v4 */
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ======================== */
+/*        HTML ROOT         */
+/* ======================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ======================== */
+/*     HEADINGS STYLES      */
+/* ======================== */
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+/* ======================== */
+/*    REMOVE bg-dots        */
+/* ======================== */
+
+/* Removed .bg-dots since it's unused. Clean code principle applied. */

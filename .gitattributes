@@ -1,0 +1,6 @@
+# 🔧 Fuerza LF como salto de línea para todos los archivos de texto
+* text=auto eol=lf
+
+# ✅ Archivos específicos pueden tener reglas propias si lo necesitas
+# Por ejemplo, para shell scripts:
+*.sh text eol=lf
