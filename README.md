@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Web Software para Empresas
 
-## Getting Started
+Portal informativo sobre tecnologías empresariales como Inteligencia Artificial, ERP, automatización y soluciones digitales para negocios.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 💡 Tecnologías principales
+
+- **Next.js 15** (App Router, TypeScript, `next/font`)
+- **React 19** con **Server Components**
+- **Tailwind CSS 4** con `postcss-nesting`
+- **PostCSS** y **Autoprefixer**
+- **Framer Motion** (animaciones)
+- **Lucide React** y **React Icons** (iconografía)
+- **OpenAI** y **Generative AI** (API IA)
+- **TypeScript**
+
+---
+
+## 📄 Estructura de archivos destacada
+
+```
+.
+├── app/                # Páginas del proyecto
+│   ├── layout.tsx     # Layout general con fuente y estructura
+│   ├── page.tsx       # Homepage
+│   ├── test.tsx       # Pruebas visuales o sandbox
+│   └── api/          # Rutas de backend (API Routes)
+│       └── chatbot/route.ts # Endpoint para asistente IA
+├── components/         # Componentes reutilizables
+│   ├── Navbar.tsx
+│   ├── Footer.tsx
+│   └── ChatBubble.tsx
+├── styles/
+│   └── globals.css   # Estilos globales + Tailwind
+├── .gitignore
+├── .gitattributes      # Reglas de salto de línea
+├── postcss.config.js   # Configuración PostCSS
+├── tailwind.config.js  # Configuración Tailwind
+├── vite.config.ts      # (solo si usas Vite para builds alternativos)
+├── tsconfig.json       # Configuración de TypeScript
+├── package.json
+└── README.md           # Este archivo
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Archivos de configuración importantes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### `tailwind.config.js`
+Define rutas de contenido, extensiones de tema, fuentes personalizadas, y plugins como `@tailwindcss/typography`.
 
-## Learn More
+### `postcss.config.js`
+Habilita nesting moderno, Tailwind y soporte cross-browser:
 
-To learn more about Next.js, take a look at the following resources:
+```js
+module.exports = {
+  plugins: {
+    'postcss-nesting': {},
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `.gitattributes`
+Fuerza uso de saltos de línea LF:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+* text=auto eol=lf
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Comandos principales
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Desarrollo
+```bash
+npm run dev       # Inicia servidor Next.js en modo desarrollo
+```
+
+### Producción
+```bash
+npm run build     # Compila para producción
+npm run start     # Sirve la versión compilada
+```
+
+### Linting
+```bash
+npm run lint      # Ejecuta ESLint
+```
+
+---
+
+## 🪜 Dependencias clave
+
+```bash
+npm install -D tailwindcss postcss autoprefixer postcss-nesting
+npm install next react react-dom framer-motion clsx react-icons lucide-react @google/generative-ai openai
+```
+
+---
+
+## ♻️ Resetear entorno de desarrollo
+
+```bash
+rd /s /q node_modules      # (Windows)
+del package-lock.json      # (Windows)
+npm cache clean --force
+npm install
+```
+
+---
+
+## ✨ Inicialización de Tailwind (si fuera necesario)
+
+```bash
+npx tailwindcss init -p    # Crea tailwind.config.js y postcss.config.js
+```
+
+---
+
+## ✅ Buenas prácticas aplicadas
+
+- Uso de `clsx` para clases condicionales
+- Animaciones con Framer Motion
+- Componentización y limpieza de código
+- Configuración PostCSS + Nesting moderna
+- Archivo `.gitattributes` para consistencia de saltos de línea
+- `.gitignore` limpio para proyectos con Next.js
+
+---
+
+📢 _Actualizado: Abril 2025_
+

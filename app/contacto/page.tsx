@@ -1,9 +1,6 @@
 "use client"
 import { useState } from "react"
 
-export const metadata = {
-  title: "Contacto | Software para Empresas",
-}
 
 export default function Contacto() {
   const [form, setForm] = useState({ nombre: "", email: "", tipo: "Oferta de empleo", mensaje: "" })
