@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 export const metadata = {
   title: 'Software para Empresas',
   description: 'IA, ERP, automatización y soluciones digitales para negocios',
+  icons: {
+    icon: "/images/favicon.webp",
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
